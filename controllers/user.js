@@ -34,7 +34,7 @@ export const registerUser = async (req, res) => {
 
     await sendMail(
       email,
-      "Let's Negotiate",
+      "Otp for registering on dealdash",
       `Please Verify your Account using otp your otp is ${otp}`
     );
 

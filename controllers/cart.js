@@ -51,7 +51,7 @@ export const addToCart = async (req, res) => {
 export const fetchCart = async (req, res) => {
   try {
     const cart = await Cart.find({ user: req.user._id }).populate("product");
-
+      console.log(cart);
     const sumofQuantities = cart.reduce(
       (total, item) => total + item.quantity,
       0
